@@ -22,7 +22,8 @@ public class OverRidding {
         Parent parent=new Parent();
         parent.show();
         Child child = new Child();
-        child.show();
-
+        child.show(); //compiletime polymorphism
+        Parent parent1=new Child();
+        parent1.show(); //runtime polymorphism
     }
 }
